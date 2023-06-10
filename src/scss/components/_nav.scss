@@ -1,0 +1,30 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--light-color);
+    transition: all .3s;
+    &:focus {
+      outline: none;
+    }
+    @include hover {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+    &:active {
+      color: var(--active-color);
+      border-color: var(--active-color);
+    }
+  }
+
+.nav__link.focus-visible {
+  border-color: var(--active-color);
+}
+  }

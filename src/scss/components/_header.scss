@@ -1,0 +1,22 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+  }
+
+  &__btn {
+    padding: 17px 33px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,19 @@
+.about {
+  &__content {
+    grid-column: 6 span;
+  }
+
+  &__images {
+    grid-column: 8/6 span;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,25 @@
+.btn {
+  color: var(--light-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--second-font);
+  border: solid 2px var(--light-color);
+  border-radius: var(--main-radius);
+  letter-spacing: 4px;
+  transition: all .3s;
+  &:focus {
+    outline: none;
+  }
+  @include hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+  &:active {
+    color: var(--active-color);
+    border-color: var(--active-color);
+  }
+}
+
+.btn.focus-visible {
+  border-color: var(--active-color);
+}
