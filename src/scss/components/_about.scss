@@ -1,10 +1,19 @@
 .about {
+  &__heading {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
   &__content {
     grid-column: 6 span;
   }
 
   &__images {
     grid-column: 8/6 span;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
   }
 
   &__img {
@@ -15,5 +24,29 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 50px;
+  }
+
+  &__name {
+    margin: 0;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    letter-spacing: 2.5px;
+    color: var(--main-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: var(--main-size);
+    line-height: 150%;
+    color: var(--text-color);
+  }
+
+  &__btn {
+    padding: 20px 65px;
+    margin-top: 20px;
   }
 }

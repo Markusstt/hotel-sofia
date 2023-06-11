@@ -18,6 +18,11 @@
     color: var(--active-color);
     border-color: var(--active-color);
   }
+
+  &--dark {
+    color: var(--main-color);
+    border-color: var(--main-color);
+  }
 }
 
 .btn.focus-visible {

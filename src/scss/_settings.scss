@@ -111,3 +111,29 @@ a {
   grid-template-columns: repeat(12, 1fr);
   column-gap: var(--offset);
 }
+
+.title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 150%;
+  letter-spacing: 2.5px;
+  color: var(--title-color);
+
+}
+
+.subtitle {
+  margin: 0;
+  margin-top: -11%;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+.main {
+  background-image: url('../../img/main-bg.png');
+  background-repeat: repeat;
+  background-position: center center;
+}
