@@ -2,11 +2,17 @@
   color: var(--light-color);
   text-transform: uppercase;
   font-weight: 500;
+  padding: 25px 65px;
   font-family: var(--second-font);
   border: solid 2px var(--light-color);
   border-radius: var(--main-radius);
   letter-spacing: 4px;
   transition: all .3s;
+  font-size: var(--main-size);
+  @include big-desktop {
+    font-size: 12px;
+  }
+
   &:focus {
     outline: none;
   }

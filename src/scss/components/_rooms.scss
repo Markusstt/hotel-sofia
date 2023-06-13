@@ -1,17 +1,10 @@
 .rooms {
+  &__heading {
+    text-align: center;
+    margin-bottom: 60px;
+  }
   &__wrapper {
     position: relative;
-  }
-
-  &__btns {
-    z-index: 10;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
   }
 
   &__slider-btn {
@@ -19,7 +12,10 @@
     height: 70px;
 
     &--prev {
-      margin-left: -35px;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 0;
       transition: all .3s;
       background-image: url("../../img/prev.svg");
       &:hover {
@@ -28,7 +24,10 @@
     }
 
     &--next {
-      margin-right: -35px;
+      z-index: 2;
+      position: absolute;
+      right: 0;
+      top: 50%;
       background-image: url("../../img/next.svg");
       transition: all .3s;
       &:hover {
