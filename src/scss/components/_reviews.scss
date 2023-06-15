@@ -1,0 +1,55 @@
+.reviews {
+  margin: var(--heading-offset) 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 280px;
+  }
+
+}
+
+.review-card {
+  background-color: rgba(17, 17, 17, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: var(--second-font);
+  &__author {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 10px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../../img/checkmark-circled\ .svg');
+      height: 15px;
+      width: 15px;
+      bottom: 0;
+      right: -25px;
+    }
+  }
+
+  &__date {
+    margin: 0;
+    font-size: 12px;
+    color: rgba(17, 17, 17, 0.5);
+    margin-bottom: 15px;
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+  }
+
+  &__descr {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+}

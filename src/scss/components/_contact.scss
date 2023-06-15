@@ -1,0 +1,24 @@
+.contact {
+  color: var(--light-color);
+  background-image: url('../../img/contact-bg.jpg'), radial-gradient(at center center, #000000 0%, #000000 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 36px;
+  }
+
+  &__btn {
+    padding: 15px 65px;
+  }
+}

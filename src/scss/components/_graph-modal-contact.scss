@@ -1,0 +1,79 @@
+.graph-modal {
+  &__container {
+    background-color: var(--light-color);
+    text-align: center;
+    color: var(--main-color);
+    max-width: 70vw;
+  }
+
+  &__close {
+    background-image: url('../../img/svg/modal-close.svg');
+  }
+  &__title {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    gap: 25px;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__input {
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    border-radius: 10px;
+  }
+
+  &__agree {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__form-checkbox {
+    margin-right: 10px;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    padding: 18px 0px;
+    width: 100%;
+  }
+}

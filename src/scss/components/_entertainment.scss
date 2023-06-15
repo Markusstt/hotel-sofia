@@ -1,0 +1,43 @@
+.entertainment {
+  margin-top: var(--section-offset);
+  &__heading {
+    margin-bottom: var(--heading-offset);
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__images {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    flex-basis: 50%;
+    padding: 10px 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--main-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-top: 10px;
+    color: var(--text-color);
+    text-align: justify;
+  }
+}
