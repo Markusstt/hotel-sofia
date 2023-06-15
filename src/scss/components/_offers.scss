@@ -1,9 +1,5 @@
 .offers {
   margin-top: var(--section-offset);
-  &__heading {
-    text-align: center;
-    margin-bottom: var(--heading-offset);
-  }
 
   &__descr {
     font-size: 24px;
@@ -15,18 +11,31 @@
 
   &__grid {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "a b"
     "c d";
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__img {
     height: 100%;
     &--first {
       grid-area: a;
+
+      @include tablet {
+        order: 0;
+      }
     }
     &--second {
       grid-area: d;
+
+      @include tablet {
+        order: 2;
+      }
     }
   }
 }
@@ -42,10 +51,18 @@
     justify-content: space-between;
     &--first {
       grid-area: b;
+
+      @include tablet {
+        order: 1;
+      }
     }
 
     &--second {
       grid-area: c;
+
+      @include tablet {
+        order: 3;
+      }
     }
   }
 

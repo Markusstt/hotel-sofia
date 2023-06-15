@@ -83,6 +83,10 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+
+  @include mobile {
+    padding: 0 var(--mobile-offset);
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -113,6 +117,15 @@ a {
   column-gap: var(--offset);
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: var(--heading-offset);
+
+  @include mobile {
+    margin-bottom: var(--heading-offset-mobile);
+  }
+}
+
 .title {
   margin: 0;
   font-weight: 400;
@@ -121,22 +134,46 @@ a {
   letter-spacing: 2.5px;
   color: var(--title-color);
 
+  @include tablet {
+    font-size: 146px;
+  }
+
+  @include mobile {
+    font-size: 60px;
+  }
 }
 
 .subtitle {
   margin: 0;
-  margin-top: -3%;
+  margin-top: -8%;
   color: var(--main-color);
   font-weight: 600;
   font-size: 60px;
   line-height: 120%;
   text-transform: capitalize;
+
+  @include tablet {
+    font-size: 40px;
+  }
+
+  @include mobile {
+    font-size: 28px;
+  }
 }
 
 .main {
   background-image: url('../../img/main-bg.png');
   background-repeat: repeat;
   background-position: center center;
+}
+
+.burger {
+  @include burger;
+  display: none;
+  color: var(--light-color);
+  @include tablet {
+    display: block;
+  }
 }
 
 // * {

@@ -6,17 +6,19 @@
   --second-font: "Montserrat", sans-serif;
   --content-width: 1180px;
   --container-offset: 15px;
+  --mobile-offset: 5px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --offset: 20px;
   --section-offset: 30px;
   --heading-offset: 50px;
+  --heading-offset-mobile: 30px;
   --main-radius: 5px;
 
   // colors
   --light-color: #fff;
   --accent-color: #0063BF;
   --active-color: #003E61;
-  --title-color: rgba(0, 14, 49, .3);
+  --title-color: #fff;
   --main-color: #000F2B;
   --text-color: #3A3A3A;
 

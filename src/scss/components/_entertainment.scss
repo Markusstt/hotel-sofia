@@ -1,13 +1,13 @@
 .entertainment {
   margin-top: var(--section-offset);
-  &__heading {
-    margin-bottom: var(--heading-offset);
-    text-align: center;
-    margin-bottom: 100px;
-  }
 
   &__content {
     display: flex;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__images {
@@ -19,6 +19,11 @@
   &__info {
     flex-basis: 50%;
     padding: 10px 30px;
+
+    @include tablet {
+      padding: 10px 0;
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
@@ -32,6 +37,10 @@
     font-size: 30px;
     font-weight: 300;
     color: var(--main-color);
+
+    @include mobile {
+      font-size: 22px;
+    }
   }
 
   &__descr {
