@@ -1,7 +1,6 @@
 .hero {
   height: 100vh;
   background-image: url('../../img/hero-bg.png');
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   color: var(--light-color);
@@ -65,6 +64,7 @@
   }
 
   &__btn {
+    display: inline-block;
     margin-top: 100px;
 
     @include big-desktop {

@@ -5,24 +5,26 @@
     display: flex;
     justify-content: space-between;
     width: auto;
+    gap: 30px;
+    flex-wrap: wrap;
 
-    @include big-desktop {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
-      row-gap: 30px;
+    @media (max-width: (1220px)) {
+      justify-content: space-evenly;
     }
 
-    @media (max-width: (650px)) {
-      grid-template-columns: 1fr;
-    }
   }
 
   &__item {
-    width: 280px;
+    min-width: 280px;
 
-    @include big-desktop {
-      &:nth-child(2n) {
+    @media (max-width: (1220px)) {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      &:nth-child(2) {
         display: none;
       }
     }

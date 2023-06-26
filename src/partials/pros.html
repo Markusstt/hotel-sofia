@@ -1,61 +1,66 @@
 <section class="pros">
   <div class="container">
     <div class="pros__heading heading">
-      <h2 class="pros__title title">
+      <h2 class="pros__title title" data-aos="fade-up" data-aos-duration="1000">
         Плюсы
       </h2>
-      <h3 class="pros__subtitle subtitle">
+      <p class="pros__subtitle subtitle" data-aos="fade-up" data-aos-duration="1000">
         Почему Именно Мы?
-      </h3>
+      </p>
     </div>
     <div class="pros__content">
-      <ul class="pros__list list-reset">
+      <div class="pros__list">
         <ul class="pros__sublist list-reset">
-          <li class="pros__item">
-            <img src="../img/star.svg" alt="" class="pros__icon">
-            <h4 class="pros__name">
+          <li class="pros__item" data-aos="fade-up" data-aos-duration="1000">
+            <img src="../img/star.svg" alt="" class="pros__icon" width="32" height="32">
+            <h3 class="pros__name">
               Комфорт
-            </h4>
+            </h3>
             <p class="pros__descr">
               Мы сделаем ваш отпуск максимально
               приятным
             </p>
           </li>
-          <li class="pros__item">
-            <img src="../img/star.svg" alt="" class="pros__icon">
-            <h4 class="pros__name">
+          <li class="pros__item" data-aos="fade-up" data-aos-duration="1000">
+            <img src="../img/star.svg" alt="" class="pros__icon" width="32" height="32">
+            <h3 class="pros__name">
               Расположение
-            </h4>
+            </h3>
             <p class="pros__descr">
               Самое сердце Санкт-Петербурга
             </p>
           </li>
         </ul>
-        <img src="../img/iphone.png" alt="" class="pros__img">
+        <picture>
+          <source srcset="../img/iphone.webp" type="image/webp">
+          <img loading="lazy" src="../img/iphone.png" class="image pros__img" width="277" height="551" alt="Сайт мини-отеля на телефоне" data-aos="fade-up" data-aos-duration="1000">
+        </picture>
         <ul class="pros__sublist list-reset">
-          <li class="pros__item">
-            <img src="../img/star.svg" alt="" class="pros__icon">
-            <h4 class="pros__name">
+          <li class="pros__item" data-aos="fade-up" data-aos-duration="1000">
+            <img src="../img/star.svg" alt="" class="pros__icon" width="32" height="32">
+            <h3 class="pros__name">
               Качество
-            </h4>
+            </h3>
             <p class="pros__descr">
               Все для вашего идеального отдыха
             </p>
           </li>
-          <li class="pros__item">
-            <img src="../img/star.svg" alt="" class="pros__icon">
-            <h4 class="pros__name">
+          <li class="pros__item" data-aos="fade-up" data-aos-duration="1000">
+            <img src="../img/star.svg" alt="" class="pros__icon" width="32" height="32">
+            <h3 class="pros__name">
               Стоимость
-            </h4>
+            </h3>
             <p class="pros__descr">
               Максимально доступные цены
             </p>
           </li>
         </ul>
-      </ul>
-      <button class="pros__btn btn btn--dark btn-reset">
-        Забронировать
-      </button>
+      </div>
+      <div class="btn-wrapper" data-aos="fade-up" data-aos-duration="1000">
+        <button class="pros__btn btn btn--dark btn-reset" data-graph-path="contact">
+          Связаться
+        </button>
+      </div>
     </div>
   </div>
 </section>

@@ -111,6 +111,10 @@ a {
   position: relative;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -162,7 +166,7 @@ a {
 }
 
 .main {
-  background-image: url('../../img/main-bg.png');
+  background-image: url('../../img/main-bg.webp');
   background-repeat: repeat;
   background-position: center center;
 }
@@ -175,6 +179,8 @@ a {
     display: block;
   }
 }
+
+
 
 // * {
 //   outline: solid 1px red;

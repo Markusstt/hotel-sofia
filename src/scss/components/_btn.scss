@@ -1,4 +1,5 @@
 .btn {
+  display: inline-block;
   color: var(--light-color);
   text-transform: uppercase;
   font-weight: 500;
@@ -9,8 +10,14 @@
   letter-spacing: 4px;
   transition: all .3s;
   font-size: var(--main-size);
+  text-align: center;
+  cursor: pointer;
   @include big-desktop {
     font-size: 12px;
+  }
+
+  @include mobile {
+    line-height: 150%;
   }
 
   &:focus {

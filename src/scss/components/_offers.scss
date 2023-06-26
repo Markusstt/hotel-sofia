@@ -7,6 +7,10 @@
     margin: 0;
     margin-top: 50px;
     margin-bottom: 50px;
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
 
   &__grid {
@@ -87,6 +91,10 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__item {
@@ -106,7 +114,67 @@
       transform: translate(-50%, 0%);
       background-image: url('../../img/star.svg');
       width: 34px;
-      height: 32px;
+      height: 34px;
+    }
+
+    &--wifi {
+      &::before {
+        background-image: url('../../img/wifi.svg');
+      }
+    }
+
+    &--tv {
+      &::before {
+        background-image: url('../../img/tv.svg');
+      }
+    }
+
+    &--service {
+      &::before {
+        background-image: url('../../img/service.svg');
+      }
+    }
+
+    &--kitchen {
+      &::before {
+        background-image: url('../../img/kitchen.svg');
+      }
+    }
+
+    &--wc {
+      &::before {
+        background-image: url('../../img/wc.svg');
+      }
+    }
+
+    &--shower {
+      &::before {
+        background-image: url('../../img/shower.svg');
+      }
+    }
+
+    &--warm {
+      &::before {
+        background-image: url('../../img/warm.svg');
+      }
+    }
+
+    &--nosmoking {
+      &::before {
+        background-image: url('../../img/nosmoking.svg');
+      }
+    }
+
+    &--quiet {
+      &::before {
+        background-image: url('../../img/quiet.svg');
+      }
+    }
+
+    &--coffee {
+      &::before {
+        background-image: url('../../img/coffee.svg');
+      }
     }
   }
 

@@ -58,16 +58,16 @@ const modal = new GraphModal();
 // });
 
 // Подключение анимаций по скроллу
-// import AOS from 'aos';
-// AOS.init();
+import AOS from 'aos';
+AOS.init();
 
 // Подключение параллакса блоков при скролле
 // import Rellax from 'rellax';
 // const rellax = new Rellax('.rellax');
 
 // Подключение плавной прокрутки к якорям
-// import SmoothScroll from 'smooth-scroll';
-// const scroll = new SmoothScroll('a[href*="#"]');
+import SmoothScroll from 'smooth-scroll';
+const scroll = new SmoothScroll('a[href*="#"]');
 
 // Подключение событий свайпа на мобильных
 // import 'swiped-events';
@@ -77,11 +77,51 @@ const modal = new GraphModal();
 //   console.log(e.detail.dir);
 // });
 
-// import { validateForms } from './functions/validate-forms';
-// const rules1 = [...];
+import { validateForms } from './functions/validate-forms';
+const rules1 = [
+  {
+    ruleSelector: '.input-name',
+    rules: [
+      {
+        rule: 'minLength',
+        value: 2,
+        errorMessage: 'Введите корректное имя'
+      },
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Заполните имя'
+      }
+    ]
+  },
+  {
+    ruleSelector: '.input-tel',
+    tel: true,
+    telError: 'Введите корректный телефон',
+    rules: [
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Заполните телефон'
+      }
+    ]
+  },
+  {
+    ruleSelector: '.input-mail',
+    tel: true,
+    telError: 'Введите корректную почту',
+    rules: [
+      {
+        rule: 'minLength',
+        value: 3,
+        errorMessage: 'Введите корректную почту'
+      }
+    ]
+  },
+];
 
-// const afterForm = () => {
-//   console.log('Произошла отправка, тут можно писать любые действия');
-// };
+const afterForm = () => {
+  console.log('Произошла отправка, тут можно писать любые действия');
+};
 
-// validateForms('.form-1', rules1, afterForm);
+validateForms('.form-1', rules1, afterForm);

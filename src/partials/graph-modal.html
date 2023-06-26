@@ -11,21 +11,22 @@
         </h5>
       </div>
       <div class="graph-modal__body">
-        <form action="" class="form">
+        <form action="../resources/mail.php" class="form form-1" method="post" enctype="multipart/form-data">
+          <input type="hidden" name="admin_email[]" value="scaperbet@gmail.com">
           <ul class="form__list list-reset">
             <li class="form__first-name form__item">
               <label class="form__label">
-                <input type="text" class="form__input" required placeholder="Ваше имя*">
+                <input type="text" class="form__input input-name" required placeholder="Ваше имя*">
               </label>
             </li>
             <li class="form__phone form__item">
               <label class="form__label">
-                <input type="tel" class="form__input" required placeholder="Ваш телефон*">
+                <input type="tel" class="form__input input-tel" placeholder="Ваш телефон*">
               </label>
             </li>
             <li class="form__email form__item">
               <label class="form__label">
-                <input type="email" class="form__input" placeholder="Ваша почта">
+                <input type="email" class="form__input input-mail" placeholder="Ваша почта">
               </label>
             </li>
             <li class="form__agree form__item">
@@ -35,13 +36,13 @@
               </div>
               <p class="form__checkbox-text">обработка персональных данных</p>
             </li>
-            <li class="form__item"><a href="#" class="form__btn btn btn--dark">Отправить</a></li>
+            <li class="form__item"><button type="submit" class="form__btn btn btn--dark">Отправить</button></li>
           </ul>
         </form>
       </div>
     </div>
   </div>
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="attraction">
+  <div class="graph-modal__container graph-modal__container--attraction" role="dialog" aria-modal="true" data-graph-target="attraction--isak">
     <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
     <div class="graph-modal__content">
       <div class="graph-modal__heading">
@@ -49,12 +50,351 @@
           Исаакиевский Собор
         </h4>
       </div>
-      <div class="graph-modal__body">
+      <div class="graph-modal__body flex">
         <div class="graph-modal__image">
           <picture>
             <source srcset="../img/isak.webp" type="image/webp">
             <img loading="lazy" src="../img/isak.jpg" class="image" width="380" height="540" alt="">
           </picture>
+        </div>
+        <div class="graph-modal__main">
+          <p class="graph-modal__name">
+            Описание
+          </p>
+          <p class="graph-modal__descr">
+            Исаакиевский собор – самый известный и крупный храм Санкт-Петербурга, выдающийся пример русской религиозной архитектуры. Это одно из самых значительных и красивых купольных зданий во всем мире. Масштабы постройки впечатляют: она является четвертой по размеру христианской святыней после римского собора Святого Петра, лондонской церкви Святого Павла и флорентийского храма Святой Марии.
+
+          Высота сооружения составляет 101,5 м, а его вместимость – около 12 тысяч человек. Сегодня Исаакиевскому собору присвоен статус музея-памятника, но четыре раза в год, по самым значительным праздникам, здесь проводятся религиозные службы. Официальное название – храм преподобного Исаакия Далматского, в честь которого и была возведена церковь.
+          </p>
+          <p class="graph-modal__name">
+            Контакты и время работы
+          </p>
+          <div class="graph-modal__list">
+            <li class="graph-modal__item graph-modal__address">
+              Исаакиевская пл. 4, метро Адмиралтейская
+            </li>
+            <li class="graph-modal__item graph-modal__time">
+              Пн, Вт, Чт, Пт, Сб, Вс; 10:00–21:00; перерыв 17:30–18:00
+            </li>
+            <li class="graph-modal__item graph-modal__phone">
+              +7 (812) 315-97-32
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal__container graph-modal__container--attraction" role="dialog" aria-modal="true" data-graph-target="attraction--ermitazh">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__heading">
+        <h4 class="graph-modal__title">
+          Эрмитаж
+        </h4>
+      </div>
+      <div class="graph-modal__body flex">
+        <div class="graph-modal__image">
+          <picture>
+            <source srcset="../img/ermitazh.webp" type="image/webp">
+            <img loading="lazy" src="../img/ermitazh.jpg" class="image" width="380" height="540" alt="Эрмитаж">
+          </picture>
+        </div>
+        <div class="graph-modal__main">
+          <p class="graph-modal__name">
+            Описание
+          </p>
+          <p class="graph-modal__descr">
+            Главный музейный комплекс Эрмитажа расположен в историческом центре Санкт-Петербурга, включает в себя шести связанных между собой зданий — Зимний дворец, Запасной дом Зимнего дворца, Малый Эрмитаж, Большой (Старый) Эрмитаж, Новый Эрмитаж и Эрмитажный театр.
+          </p>
+          <p class="graph-modal__name">
+            Контакты и время работы
+          </p>
+          <div class="graph-modal__list">
+            <li class="graph-modal__item graph-modal__address">
+              Метро Адмиралтейская
+            </li>
+            <li class="graph-modal__item graph-modal__time">
+              Вт 11:00–20:00; Ср, Чт 11:00–18:00; Пт, Сб 11:00–20:00; Вс 11:00–18:00
+            </li>
+            <li class="graph-modal__item graph-modal__phone">
+              +7 (812) 710-90-79
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal__container graph-modal__container--attraction" role="dialog" aria-modal="true" data-graph-target="attraction--petropasvlovsk">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__heading">
+        <h4 class="graph-modal__title">
+          Петропавловская Крепость
+        </h4>
+      </div>
+      <div class="graph-modal__body flex">
+        <div class="graph-modal__image">
+          <picture>
+            <source srcset="../img/petropavlovsk.webp" type="image/webp">
+            <img loading="lazy" src="../img/petropavlovsk.jpg" class="image" width="380" height="540" alt="">
+          </picture>
+        </div>
+        <div class="graph-modal__main">
+          <p class="graph-modal__name">
+            Описание
+          </p>
+          <p class="graph-modal__descr">
+            Петропавловская крепость — уникальный военный, исторический и архитектурный памятник, судьба которого тесно переплелась с судьбой всей России. Она была заложена 16 (27) мая 1703 г. и предназначалась для защиты земель, отвоеванных в ходе Северной войны со Швецией. После взятия шведской крепости Ниеншанц Петр I с приближенными, объезжая острова невской дельты в поисках места для нового русского укрепления, обратил внимание на этот удобно расположенный остров.
+          </p>
+          <p class="graph-modal__name">
+            Контакты и время работы
+          </p>
+          <div class="graph-modal__list">
+            <li class="graph-modal__item graph-modal__address">
+              Метро Горьковская, Спортивная, Петроградская
+            </li>
+            <li class="graph-modal__item graph-modal__time">
+              Ежедневно с 10:00 до 21:00
+            </li>
+            <li class="graph-modal__item graph-modal__phone">
+              +7 (812) 230-64-31
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal__container graph-modal__container--attraction" role="dialog" aria-modal="true" data-graph-target="attraction--spas">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__heading">
+        <h4 class="graph-modal__title">
+          Храм Спаса-На-Крови
+        </h4>
+      </div>
+      <div class="graph-modal__body flex">
+        <div class="graph-modal__image">
+          <picture>
+            <source srcset="../img/petropavlovsk.webp" type="image/webp">
+            <img loading="lazy" src="../img/petropavlovsk.jpg" class="image" width="380" height="540" alt="">
+          </picture>
+        </div>
+        <div class="graph-modal__main">
+          <p class="graph-modal__name">
+            Описание
+          </p>
+          <p class="graph-modal__descr">
+            Храм Воскресения Христова на Крови́ (храм Спа́са на Крови́) — православный храм-памятник в Санкт-Петербурге, сооружённый на месте, где 1 марта 1881 года в результате покушения был смертельно ранен император Александр II (выражение на крови указывает на кровь царя). Храм был построен как памятник царю на средства, собранные по всей России.
+          </p>
+          <p class="graph-modal__name">
+            Контакты и время работы
+          </p>
+          <div class="graph-modal__list">
+            <li class="graph-modal__item graph-modal__address">
+              Наб. канала Грибоедова, 2Б, лит.А
+            </li>
+            <li class="graph-modal__item graph-modal__time">
+
+Пн, Вт, Чт, Пт, Сб, Вс 10:00–17:30
+            </li>
+            <li class="graph-modal__item graph-modal__phone">
+              +7 (812) 315-16-36
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal__container graph-modal__container--attraction" role="dialog" aria-modal="true" data-graph-target="attraction--nevskij">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__heading">
+        <h4 class="graph-modal__title">
+          Невский Проспект
+        </h4>
+      </div>
+      <div class="graph-modal__body flex">
+        <div class="graph-modal__image">
+          <picture>
+            <source srcset="../img/petropavlovsk.webp" type="image/webp">
+            <img loading="lazy" src="../img/petropavlovsk.jpg" class="image" width="380" height="540" alt="">
+          </picture>
+        </div>
+        <div class="graph-modal__main">
+          <p class="graph-modal__name">
+            Описание
+          </p>
+          <p class="graph-modal__descr">
+            Не́вский проспе́кт — главная улица Санкт-Петербурга, протянувшаяся на 4,5 км от Адмиралтейства до Александро-Невской лавры. Пересекает реки Мойку (Зелёный мост), канал Грибоедова (Казанский мост), Фонтанку (Аничков мост). Наибольшая ширина составляет 60 м (у Гостиного двора), наименьшая — 25 м (у Мойки). Нечётная сторона неофициально называется «теневой», чётная — «солнечной» (популярное место для прогулок).
+          </p>
+          <p class="graph-modal__name">
+
+          </p>
+          <div class="graph-modal__list list-reset">
+            <li class="graph-modal__item graph-modal__address">
+
+            </li>
+            <li class="graph-modal__item graph-modal__time">
+
+            </li>
+            <li class="graph-modal__item graph-modal__phone">
+
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal__container graph-modal__container--attraction" role="dialog" aria-modal="true" data-graph-target="attraction--kazan">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__heading">
+        <h4 class="graph-modal__title">
+          Казанский Собор
+        </h4>
+      </div>
+      <div class="graph-modal__body flex">
+        <div class="graph-modal__image">
+          <picture>
+            <source srcset="../img/kazansobor.webp" type="image/webp">
+            <img loading="lazy" src="../img/kazansobor.jpg" class="image" width="380" height="540" alt="">
+          </picture>
+        </div>
+        <div class="graph-modal__main">
+          <p class="graph-modal__name">
+            Описание
+          </p>
+          <p class="graph-modal__descr">
+            Каза́нский собо́р (Собор Казанской иконы Божией Матери) — один из крупнейших храмов Санкт-Петербурга. Построен на Невском проспекте в 1801—1811 годах архитектором Андреем Воронихиным в стиле русского классицизма для хранения чтимого списка чудотворной иконы Божией Матери Казанской. После Отечественной войны 1812 года приобрёл значение памятника русской воинской славы.
+          </p>
+          <p class="graph-modal__name">
+            Контакты и время работы
+          </p>
+          <div class="graph-modal__list">
+            <li class="graph-modal__item graph-modal__address">
+              Казанская пл. 2, метро Невский проспект
+            </li>
+            <li class="graph-modal__item graph-modal__time">
+              Пн - Сб 09:00–20:00; Вс 07:00–20:00
+            </li>
+            <li class="graph-modal__item graph-modal__phone">
+              +7 (812) 571-48-26
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal__container graph-modal__container--attraction" role="dialog" aria-modal="true" data-graph-target="attraction--strelka">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__heading">
+        <h4 class="graph-modal__title">
+          Стрелка Васильевского Острова
+        </h4>
+      </div>
+      <div class="graph-modal__body flex">
+        <div class="graph-modal__image">
+          <picture>
+            <source srcset="../img/strelka-vaski.webp" type="image/webp">
+            <img loading="lazy" src="../img/strelka-vaski.jpg" class="image" width="380" height="540" alt="">
+          </picture>
+        </div>
+        <div class="graph-modal__main">
+          <p class="graph-modal__name">
+            Описание
+          </p>
+          <p class="graph-modal__descr">
+            Стрелка Васильевского острова — мыс на восточной оконечности Васильевского острова в Санкт-Петербурге, омываемый Большой Невой и Малой Невой; один из самых известных архитектурных ансамблей города; пример гармонии архитектуры города с пейзажем берегов Невы.
+          </p>
+          <p class="graph-modal__name">
+            Адрес
+          </p>
+          <div class="graph-modal__list list-reset">
+            <li class="graph-modal__item graph-modal__address">
+              Санкт-Петербург, Биржевая площадь, метро Адмиралтейская
+            </li>
+            <li class="graph-modal__item graph-modal__time">
+            </li>
+            <li class="graph-modal__item graph-modal__phone">
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal__container graph-modal__container--attraction" role="dialog" aria-modal="true" data-graph-target="attraction--kunts">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__heading">
+        <h4 class="graph-modal__title">
+          Музей Антропологии И Этнографии Кунсткамера
+        </h4>
+      </div>
+      <div class="graph-modal__body flex">
+        <div class="graph-modal__image">
+          <picture>
+            <source srcset="../img/kunstkamera.webp" type="image/webp">
+            <img loading="lazy" src="../img/kunstkamera.jpg" class="image" width="380" height="540" alt="">
+          </picture>
+        </div>
+        <div class="graph-modal__main">
+          <p class="graph-modal__name">
+            Описание
+          </p>
+          <p class="graph-modal__descr">
+            Кунстка́мера (от нем. Kunstkammer — кабинет редкостей; в настоящее время — Музей антропологии и этнографии имени Петра Великого РАН (МАЭ РАН)) — первый музей в России, учреждённый царём Петром I в Санкт-Петербурге (1714).Обладает уникальной коллекцией предметов старины, раскрывающих историю и быт многих народов. Но многим этот музей известен своей «особенной» коллекцией анатомических редкостей и аномалий.
+          </p>
+          <p class="graph-modal__name">
+            Контакты и время работы
+          </p>
+          <div class="graph-modal__list">
+            <li class="graph-modal__item graph-modal__address">
+              Университетская наб. 3, метро Адмиралтейская
+            <li class="graph-modal__item graph-modal__time">
+              Вт-Вс 10:00–18:00
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal__container graph-modal__container--attraction" role="dialog" aria-modal="true" data-graph-target="attraction--ostrov">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__heading">
+        <h4 class="graph-modal__title">
+          Остров "Новая Голландия"
+        </h4>
+      </div>
+      <div class="graph-modal__body flex">
+        <div class="graph-modal__image">
+          <picture>
+            <source srcset="../img/ostrov-golandia.webp" type="image/webp">
+            <img loading="lazy" src="../img/ostrov-golandia.jpg" class="image" width="380" height="540" alt="">
+          </picture>
+        </div>
+        <div class="graph-modal__main">
+          <p class="graph-modal__name">
+            Описание
+          </p>
+          <p class="graph-modal__descr">
+            Но́вая Голла́ндия — остров в Адмиралтейском районе Санкт-Петербурга, ограниченный рекой Мойкой, Крюковым и Адмиралтейским каналами. Кроме того, Новая Голландия — единственный в своём роде памятник промышленной архитектуры раннего классицизма. Площадь острова — 7,8 га.
+          </p>
+          <p class="graph-modal__name">
+            Контакты и время работы
+          </p>
+          <div class="graph-modal__list">
+            <li class="graph-modal__item graph-modal__address">
+              Наб. Адмиралтейского канала, 2, метро Адмиралтейская
+            </li>
+            <li class="graph-modal__item graph-modal__time">
+              Пн - Чт 09:00–22:00; Пт - Вс 09:00–23:00
+            </li>
+            <li class="graph-modal__item graph-modal__phone">
+              +7 (812) 245-20-35
+            </li>
+          </div>
         </div>
       </div>
     </div>
