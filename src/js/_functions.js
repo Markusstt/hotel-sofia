@@ -78,13 +78,14 @@ const scroll = new SmoothScroll('a[href*="#"]');
 // });
 
 import { validateForms } from './functions/validate-forms';
+import { rule } from "postcss";
 const rules1 = [
   {
     ruleSelector: '.input-name',
     rules: [
       {
         rule: 'minLength',
-        value: 2,
+        value: 1,
         errorMessage: 'Введите корректное имя'
       },
       {
@@ -97,24 +98,34 @@ const rules1 = [
   {
     ruleSelector: '.input-tel',
     tel: true,
-    telError: 'Введите корректный телефон',
+    telError: 'Введите корректный номер телефона',
     rules: [
       {
         rule: 'required',
         value: true,
-        errorMessage: 'Заполните телефон'
+        errorMessage: 'Обязательное поле'
       }
     ]
   },
+  // {
+  //   ruleSelector: '.input-mail',
+  //   tel: true,
+  //   telError: 'Введите корректную почту',
+  //   // rules: [
+  //   //   {
+  //   //     rule: 'minLength',
+  //   //     value: 2,
+  //   //     errorMessage: 'Введите корректную почту'
+  //   //   }
+  //   // ]
+  // },
   {
-    ruleSelector: '.input-mail',
-    tel: true,
-    telError: 'Введите корректную почту',
+    ruleSelector: '.input-checkbox',
     rules: [
       {
-        rule: 'minLength',
-        value: 3,
-        errorMessage: 'Введите корректную почту'
+        rule: 'required',
+        value: true,
+        errorMessage: 'Обязательное поле'
       }
     ]
   },

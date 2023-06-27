@@ -134,6 +134,13 @@
 
   &__form-checkbox {
     margin-right: 10px;
+
+    .just-validate-error-label {
+      display: none;
+    }
+
+    .just-validate-error-field {
+    }
   }
 
   &__item {
